@@ -1,0 +1,113 @@
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICB.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICBI.TTF);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICI.TTF);
+    font-style: italic;
+}
+
+.container {
+    width: 2560px;
+    height: 1440px;
+    background-image: url("../img/img1 - copy.png");
+    background-size: 2560px 1440px;
+    background-repeat: no-repeat;
+}
+
+.container .station_name {
+    height: 280px;
+    width: 580px;
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 110px;
+    position: absolute;
+    top: 54px;
+    left: 62px;
+    word-wrap: break-word;
+}
+
+.container .buses {
+    position: absolute;
+    top: 448px;
+    left: 62px;
+    width: 682px;
+}
+
+.container .buses .bus_detail {
+    margin-bottom: 70px;
+}
+
+.container .buses .bus_name {
+    /*display: inline;*/
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.container .buses .bus_time {
+    float: right;
+    position: relative;
+    top: 18px;
+    display: inline;
+    font-family: "Century Gothic";
+    font-style: italic;
+    font-size: 70px;
+}
+
+.container .daily_info {
+    width:1500px;
+    position: absolute;
+    left: 920px;
+    top:53px;
+    font-family:"Century Gothic";
+}
+
+.container .daily_info .date{
+    float:left;
+}
+
+.container .daily_info .date .weekday{
+    font-size: 43px;
+}
+
+.container .daily_info .date .date_date{
+    font-size: 38px;
+}
+
+.container .daily_info .date_time{
+    float: left;
+    position:relative;
+    left: 30px;
+    top: -10px;
+    font-size: 100px;
+}
+
+.container .daily_info .pm{
+    float:left;
+    position: relative;
+    left: 500px;
+    font-size: 60px;
+}
+
+.container .daily_info .temp{
+    float: right;
+    position: relative;
+    right:55px;
+    font-size: 60px;
+}
