@@ -11,13 +11,18 @@
 <div class="station_name">
     {{stationName}}
 </div>
+<img src="../img/bus_station.png" class="bus_img">
 <div class="buses">
+    <p class="bus_header">
+        <span class="bus_header_left">route</span>
+        <span class="bus_header_right">remaining time</span>
+    </p>
     <p ng-repeat="bus in buses" class="bus_detail">
         <span class="bus_name">
             {{bus.name}}
         </span>
         <span class="bus_time">
-            {{bus.time}}
+            {{bus.time}} min
         </span>
     </p>
 </div>
@@ -34,11 +39,16 @@
         {{time | date:"HH:mm:ss"}}
     </div>
     <div class="pm">
-        {{pm}}
+        <p class="pm_p">
+            <span class="pm_left">PM2.5</span><span class="pm_right">{{pm}}</span>
+        </p>
     </div>
     <div class="temp">
-        {{temp}}
+        {{temp}}° c<img src="../img/weather_icon.png" class="weather_icon">
     </div>
+</div>
+<div class="bg_img">
+    <img src="../img/bg_img.png">
 </div>
 
 </body>
