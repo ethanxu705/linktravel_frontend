@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="../js/js1.js"></script>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body class="container" ng-app="myApp" ng-controller="myCtrl">
+<div class="station_name">
+    {{stationName}}
+</div>
+<img src="../img/bus_station.png" class="bus_img">
+<div class="buses">
+    <p class="bus_header">
+        <span class="bus_header_left">route</span>
+        <span class="bus_header_right">remaining time</span>
+    </p>
+    <p ng-repeat="bus in buses" class="bus_detail">
+        <span class="bus_name">
+            {{bus.name}}
+        </span>
+        <span class="bus_time">
+            {{bus.time}} min
+        </span>
+    </p>
+</div>
+<iframe src="{{myURL}}" class="iframe">
+</iframe>
+<!--<div class="map">-->
+    <!--<img src="../img/map.png">-->
+<!--</div>-->
+
+</body>
+</html>

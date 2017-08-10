@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="../js/js1.js"></script>
+    <link rel="stylesheet" href="../css/style1.css">
+</head>
+<body class="container" ng-app="myApp" ng-controller="myCtrl">
+<div class="page3_header">
+    <div class="header_left">
+        <div class="header_left_content">Waiting</div>
+    </div>
+    <div class="header_right">
+
+        <div class="date">
+            <div class="weekday">
+                {{time | date:"EEEE"}}
+            </div>
+            <div class="date_date">
+                {{time | date:"MM/dd/yyyy"}}
+            </div>
+        </div>
+        <div class="date_time">
+            {{time | date:"HH:mm:ss"}}
+        </div>
+        <div class="pm">
+            <p class="pm_p">
+                <span class="pm_left">PM2.5</span><span class="pm_right">{{pm}}</span>
+            </p>
+        </div>
+        <div class="temp">
+            {{temp}}° c<img src="../img/weather_icon.png" class="weather_icon">
+        </div>
+
+    </div>
+</div>
+<div class="page3_content">
+    <div class="waiting_queue">
+        <div class="waiting_bus" ng-repeat="bus in buses | orderBy:'time' | limitTo:3">
+            <span style="float: right">{{bus.name}}</span>
+        </div>
+    </div>
+    <div class="body_news">
+        <div ng-repeat="info in news" class="news_piece">
+            <div class="piece_left">
+                <div class="line"></div>
+                <div class="news_time">{{info.time}} hours before</div>
+                <div class="news_title">{{info.title}}</div>
+                <div class="news_content">{{info.content}}</div>
+            </div>
+            <div class="piece_right">
+                <img src="{{info.imgUrl}}">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

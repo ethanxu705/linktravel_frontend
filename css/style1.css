@@ -28,8 +28,6 @@
     color: #405CB0;
     width: 2560px;
     height: 1440px;
-    background-size: 2560px 1440px;
-    /*background: url("../img/img1 - copy.png") no-repeat;*/
 }
 
 .container .station_name {
@@ -92,7 +90,7 @@
 }
 
 .container .daily_info {
-    width: 1600px;
+    width: 1640px;
     height: 200px;
     position: absolute;
     left: 829px;
@@ -101,19 +99,20 @@
     border-left: solid 45px;
 }
 
-.container .daily_info .date {
+/*.container .daily_info 公用*/
+.date {
     float: left;
 }
 
-.container .daily_info .date .weekday {
+.date .weekday {
     font-size: 43px;
 }
 
-.container .daily_info .date .date_date {
+.date .date_date {
     font-size: 38px;
 }
 
-.container .daily_info .date_time {
+.date_time {
     float: left;
     position: relative;
     left: 30px;
@@ -121,7 +120,7 @@
     font-size: 100px;
 }
 
-.container .daily_info .pm {
+.pm {
     height: 52px;
     width: 478px;
     float: left;
@@ -137,28 +136,140 @@
     margin-top: -11px;
 }
 
-.container .daily_info .pm .pm_left {
+.pm .pm_left {
     padding-left: 60px;
 }
 
-.container .daily_info .pm .pm_right {
+.pm .pm_right {
     float: right;
     margin-right: 88px;
 }
 
-.container .daily_info .temp {
+.temp {
     float: right;
     position: relative;
     right: 12px;
     font-size: 60px;
 }
 
+/* .end.. */
+
 .weather_icon {
     margin-left: 15px;
 }
 
-.bg_img {
+.container .bg_img {
     float: right;
     position: relative;
     top: 251px;
 }
+
+.container .map, .container .iframe {
+    width: 1732px;
+    height: 1440px;
+    float: right;
+}
+
+/* PAGE 3 */
+.page3_header {
+    height: 220px;
+}
+
+.page3_header .header_left {
+    width: 680px;
+    height: 100%;
+    float: left;
+    font-size: 90px;
+    background-color: #405CB0;
+}
+
+.page3_header .header_left .header_left_content {
+    position: relative;
+    top: 86px;
+    left: 140px;
+    color: white;
+}
+
+.page3_header .header_right {
+    float: left;
+    font-size: 80px;
+    width: 1640px;
+    position: relative;
+    top: 54px;
+    left: 154px;
+}
+
+.page3_content {
+    background-color: #405CB0;
+}
+
+.waiting_queue {
+    width: 2800px;
+    height: 420px;
+    color: white;
+    position: relative;
+    left: 140px;
+}
+
+.waiting_queue .waiting_bus {
+    width: 445px;
+    margin-top: 80px;
+    float: left;
+    font-size: 265px;
+    font-weight: bold;
+    margin-right: 400px;
+}
+
+.body_news {
+    height: 800px;
+    width: 100%;
+}
+
+.body_news .news_piece {
+    height: 400px;
+    width: 100%;
+}
+
+.news_piece .piece_left {
+    height: 100%;
+    float: left;
+    margin-left: 160px;
+    position: relative;
+    top:50px;
+    width: 1780px;
+}
+
+.piece_left .line{
+    height:10px;
+    width:175px;
+    border-bottom: 20px white solid;
+    float:left;
+}
+
+.piece_left .news_time {
+    width: 800px;
+    font-size: 35px;
+    color: lightblue;
+    margin-left: 200px;
+}
+
+.piece_left .news_title {
+    color: white;
+    font-size: 55px;
+    margin-top: 55px;
+}
+
+.piece_left .news_content {
+    color: lightblue;
+    font-size: 36px;
+    word-wrap: break-word;
+    margin-top: 25px;
+}
+
+.news_piece .piece_right {
+    width: 529px;
+    float: right;
+    position: relative;
+    top:55px;
+}
+
