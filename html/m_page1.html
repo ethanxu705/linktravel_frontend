@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="../js/js1.js"></script>
+    <link rel="stylesheet" href="../css/m_style1.css">
+</head>
+<body class="m_container" ng-app="myApp" ng-controller="myCtrl">
+<div class="m_header">
+    <div class="m_daily_info">
+        <div class="m_date_info">
+            <p class="m_date_time"><span>{{time | date:"HH:mm"}}</span><span style="margin-left: 35px;">{{time | date:"EEEE"}}</span></p>
+            <p class="m_date_date">{{time | date:"MM/dd/yyyy"}}</p>
+        </div>
+        <div class="m_weather_info">
+            <div class="m_weather_icon">
+                <img src="../img/m_weather_icon.png">
+            </div>
+            <div class="m_weather_detail">
+                <div id="m_temp">{{temp}}°c</div>
+                <div id="m_pm"><span class="pm_left">PM2.5</span><span class="pm_right">{{pm}}</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="m_station_info">
+        <div class="m_station_name">
+            {{stationName}}
+        </div>
+        <div class="m_station_icon">
+            <img src="../img/m_station_icon.png">
+        </div>
+    </div>
+</div>
+<div class="m_content">
+    <div class="m_bus_row">
+        <div ng-repeat="bus in buses | orderBy:'time' | range:0:2" class="m_bus">
+            <div class="m_bus_name">{{bus.name}}</div>
+            <div class="m_bus_time">{{bus.time}}<span class="m_bus_text">min</span></div>
+        </div>
+    </div>
+    <div class="m_bus_row">
+        <div ng-repeat="bus in buses | orderBy:'time' | range:3:5" class="m_bus">
+            <div class="m_bus_name">{{bus.name}}</div>
+            <div class="m_bus_time">{{bus.time}}<span class="m_bus_text">min</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

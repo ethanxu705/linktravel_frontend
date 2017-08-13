@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/angular.js/1.4.6/angular.min.js"></script>
+    <script src="../js/js1.js"></script>
+    <link rel="stylesheet" href="../css/m_style1.css">
+</head>
+<body class="m_container" ng-app="myApp" ng-controller="myCtrl">
+    <div class="m_map_box">
+        <img src="../img/m_map_box.png">
+    </div>
+    <div class="m_compass_img">
+        <img src="../img/m_compass.png">
+    </div>
+    <div class="m_news" ng-repeat="piece in news | orderBy:'time' | limitTo:1 ">
+        <div class="m_news_header">
+            <div class="m_news_line"></div>
+            <div class="m_news_time">{{piece.time}} hours before</div>
+        </div>
+        <div class="m_news_title">
+            {{piece.title}}
+        </div>
+        <div class="m_news_content">
+            <div class="m_news_image"><img src="{{piece.imgUrl}}" id="m_news_img"></div>
+            <div class="m_news_detail">{{piece.content}}</div>
+        </div>
+    </div>
+
+</body>
+</html>

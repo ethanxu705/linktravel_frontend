@@ -1,0 +1,207 @@
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHIC.TTF);
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICB.TTF);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICBI.TTF);
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: GOTHIC;
+    src: url(../fonts/GOTHICI.TTF);
+    font-style: italic;
+}
+
+.m_container {
+    font-family: "Century Gothic";
+    margin: 0;
+    padding: 0;
+    width: 1200px;
+    height: 1600px;
+}
+
+.m_container .m_header {
+    height: 555px;
+    width: 100%;
+    color: white;
+    background-color: black;
+}
+
+.m_container .m_header .m_daily_info {
+    height: 200px;
+    width: 100%;
+}
+
+.m_daily_info .m_date_info {
+    float: left;
+    width: 600px;
+    height: 100%;
+    position: relative;
+    left: 60px;
+}
+
+.m_daily_info .m_weather_info {
+    float: right;
+    height: 100%;
+    width: 490px;
+    position: relative;
+    top: 50px;
+    right: 50px;
+}
+
+.m_date_info .m_date_time {
+    font-size: 50px;
+    position: relative;
+    top: 7px;
+}
+
+.m_date_info .m_date_date {
+    font-size: 38px;
+    position: relative;
+    top: -35px;
+}
+
+.m_weather_info .m_weather_icon {
+    float: right;
+}
+
+.m_weather_info .m_weather_detail {
+    float: right;
+    margin-right: 33px;
+}
+
+#m_temp {
+    font-size: 60px;
+    float: right;
+}
+
+#m_pm {
+    font-size: 38px;
+    position: relative;
+    top: 5px;
+}
+
+#m_pm .pm_left {
+    position: relative;
+    right: 20px;
+}
+
+.m_station_info {
+    height: 305px;
+    word-wrap: break-word;
+    font-size: 114px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 63px;
+}
+
+.m_station_info .m_station_name {
+    float: left;
+    width: 600px;
+
+}
+
+.m_station_info .m_station_icon {
+    float: right;
+    position: relative;
+    right: 50px;
+    top: 140px;
+}
+
+.m_content {
+    height: 1000px;
+    margin: 0 50px;
+    border-bottom: solid black 6px;
+}
+
+.m_content .m_bus_row {
+    padding-top: 90px;
+    width: 100%;
+    height: 410px;
+    border-bottom: solid black 4px;
+}
+
+.m_content .m_bus_row .m_bus {
+    width: 366px;
+    float: left;
+    text-align: center;
+}
+
+div.m_bus_name {
+    font-size: 100px;
+    font-weight: bold;
+}
+
+div.m_bus_time {
+    margin-top: 90px;
+    font-size: 80px;
+    font-style: italic;
+}
+
+span.m_bus_text {
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+/* page2 */
+.m_map_box {
+    height: 870px;
+}
+
+.m_compass_img {
+    position: absolute;
+    left:932px;
+    top: 675px;
+
+}
+
+.m_news {
+    height: 600px;
+    margin: 130px 50px 0 50px;
+}
+
+.m_news_line{
+    float: left;
+    margin: 10px 30px 0 15px;
+    width: 170px;
+    border-top: solid black 15px;
+    border-bottom: solid black 15px;
+}
+
+.m_news_time {
+    font-size: 36px;
+}
+
+.m_news_title {
+    width: 100%;
+    font-size: 55px;
+    word-wrap: break-word;
+    margin: 45px 0 60px 0;
+}
+
+.m_news_image{
+    float:left;
+    margin: 0 35px 0 10px;
+}
+
+img#m_news_img{
+    width: 300px;
+    height: 170px;
+}
+
+.m_news_detail {
+    word-wrap: break-word;
+    font-size: 30px;
+}
+
+

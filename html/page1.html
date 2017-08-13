@@ -17,7 +17,7 @@
         <span class="bus_header_left">route</span>
         <span class="bus_header_right">remaining time</span>
     </p>
-    <p ng-repeat="bus in buses" class="bus_detail">
+    <p ng-repeat="bus in buses | orderBy:'time' | limitTo:5" class="bus_detail">
         <span class="bus_name">
             {{bus.name}}
         </span>
