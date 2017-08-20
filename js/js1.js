@@ -41,4 +41,4 @@ app.filter('range', function(){
         return array;
 
     }
-})
+});
